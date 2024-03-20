@@ -30,3 +30,24 @@ header {
     padding: 10px;
     background-color: #6E8641;
 }
+
+/*  MAIN */
+
+main {
+    display: flex; 
+}
+
+aside{
+    width: 15%;
+    background-color: #6E8641;
+}
+.main_container{
+    display: flex;
+}
+
+nav{
+    height: 50%;
+    writing-mode: vertical-lr;
+    text-orientation: sideways;
+    transform: rotate(-180deg);
+}
