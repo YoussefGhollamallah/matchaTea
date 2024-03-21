@@ -41,16 +41,12 @@ main {
 }
 
 aside{
-    width: 15%;
     background-color: #6E8641;
-}
-.main_container{
     position: absolute;
-    top: 0;
-    left: 0;
-    margin: 15%;
-    width: 300px; 
-    height: auto; 
+    top: 10%;
+    left: 0; 
+    height: auto;
+    display: flex
 }
 
 nav{
@@ -60,3 +56,15 @@ nav{
     rotate :360deg;
 }
 
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px;
+    background-color: #6E8641;
+    /* flex-direction: column; */
+    
+}
+.navigation ul{
+    text-decoration: none;
+}
