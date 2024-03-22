@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    color : blue;
 }
 
 /* STYLE GENERAL AU SITE */
@@ -31,10 +33,42 @@ header {
     background-color: #6E8641;
 }
 
+/* ASIDE  */
+
+nav{
+    display: flex;
+    
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 116px);
+    background-color: #C3D4A5;
+    padding: 10px;
+    flex: 1 1 30%;
+    
+}
+
+nav ul {
+    rotate : 270deg;
+    /* display: flex; */
+    float: left;
+}
+
+nav ul li {
+   float: right;
+   margin: 0 20px;
+}
+
+li:hover {
+    
+    text-decoration: underline;
+}
+
+
 /*  MAIN */
 
-main {
-    display: grid; 
+img {
+    display: flex; 
     margin-left: 15%;
     margin-top: auto;
     object-fit: cover;
@@ -44,49 +78,49 @@ main {
 .produit{
     align-items: center;
 }
-aside{
-    background-color: #6E8641;
-    position: absolute;
-    top: 10%;
-    left: 0; 
-    height: auto;
-    display: flex
-}
 
-nav{
-    height: 50%;
-    writing-mode: vertical-lr;
-    text-orientation: sideways;
-    rotate :360deg;
-    justify-content: space-between;
 
-}
+/* FOOTER */
 
-footer{
+footer {
     display: flex;
-    justify-content: space-between;
-    padding: 70px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
     background-color: #6E8641;
-    flex-direction: column;
-    
-}
-.navigation ul{
-    text-decoration: none;
-    margin-left: 10%;
-    align-items: center;
-
+    flex: 2 1 70%;
 }
 
-.merci{
+.footer-milieu {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px 70px;
+    background-color: #C3D4A5;
+}
+#btn {
+    padding: 10px 15px;
+    background-color: #77B41B;
+    color: #F0F0F0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     margin: auto;
-    
 
 }
-.coordonnée{
-    flex-direction: column;
-    align-items: center;
-    margin-right: auto;
+
+.section-footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 
+
+/*  MEDIA MOBILE */
+@media screen and (max-width: 1200px) {
+    /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
+
+}
