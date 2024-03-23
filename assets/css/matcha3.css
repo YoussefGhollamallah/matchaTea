@@ -23,6 +23,11 @@ p {
     font-family: "Hind Madurai", sans-serif;
 }
 
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* HEADER */
 
 header {
@@ -31,6 +36,7 @@ header {
     align-items: center;
     padding: 10px;
     background-color: #6E8641;
+    width: 100%;
 }
 
 /* ASIDE  */
