@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montez&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "header header"
+    "aside content"
+    "aside footer";
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 16% 1fr 35%;
+}
+
+header,
+main,
+aside,
+footer {
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: header;
+  background-color: #6e8641;
+}
+
+header img {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #c3d4a5;
+}
+
+main {
+  grid-area: content;
+  background-color: #cdd0c0;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #86945e;
+}
+
+.headerlink {
+  text-decoration: none;
+}
+
+.headertext {
+  color: white;
+  font-family: "Montez", cursive;
+  font-weight: 400;
+  font-style: normal;
+  transition: 0.3s;
+  font-size: 8vh;
+  text-align: center;
+}
+
+.headertext:hover {
+  transition: 0.3s;
+  color: #555;
+}
+
+.headertext:active {
+  transition: 0.3s;
+  color: #333;
+}
+
+aside {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 116px);
+  padding: 10px;
+  flex: 1 1 30%;
+}
+
+aside ul {
+  rotate: 270deg;
+  float: left;
+  list-style: none;
+}
+
+.navbar {
+  font-size: 4vh;
+}
+
+.navbar a {
+  color: black;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  transition: 0.3s;
+  color: rgb(57, 57, 207);
+}
+
+.navbar a:active {
+  transition: 0.3s;
+  color: rgb(173, 11, 223);
+}
