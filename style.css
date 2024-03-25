@@ -142,12 +142,12 @@ footer button {
 .navigation a {
   text-decoration: none;
   color: white;
-  transition: 0.1s;
+  transition: 0.2s;
 }
 
 .navigation a:hover {
   color: #333;
-  transition: 0.1s;
+  transition: 0.2s;
 }
 
 .merci {
@@ -219,6 +219,7 @@ aside {
 
 .vente-matcha {
   display: flex;
+  flex-wrap: wrap;
   align-content: center;
   align-items: center;
   justify-content: space-evenly;
@@ -249,3 +250,71 @@ hr {
   margin-bottom: 10px;
   color: black;
 }
+
+/* MEDIA QUERIES */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  body {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+      "header"
+      "content"
+      "footer";
+    grid-template-rows: 10vh 100vh 100vh;
+  }
+
+  .headertext {
+    font-size: xx-large;
+  }
+
+  header img {
+    max-height: 75px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .vente-matcha {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .vente-matcha img {
+    animation: fadeIn 1s;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    height: 12vh;
+    transition: 0s;
+
+  }
+  .vente-matcha img:hover {
+    height: 12vh;
+    transition: 0s;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  aside {
+    display:none
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+
+} */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+
+} */
