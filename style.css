@@ -30,6 +30,36 @@ main {
   background-color: #cdd0c0;
 }
 
+main h1 {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: xx-large;  
+  text-align: center;
+}
+
+main h2, p, figcaption {
+  font-family: "Hind Madurai", sans-serif;
+}
+
+main a {
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+
+main a:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+main figcaption {
+  text-align: center;
+  font-weight: bold;
+  font-size: x-large;
+  margin-bottom: 15px;
+}
+
 li {
   list-style: none;
 }
@@ -183,4 +213,39 @@ aside {
   /* text-decoration: underline; */
   font-weight: bold;
   transition: 0.1s;
+}
+
+/* VENTE */
+
+.vente-matcha {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.vente-matcha img {
+  animation: fadeIn 1s;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  height: 22vh;
+  transition: 0.3s;
+}
+
+.vente-matcha img:hover {
+  height: 28vh;
+  transition: 0.3s;
+}
+
+/* À PROPOS */
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: black;
 }
