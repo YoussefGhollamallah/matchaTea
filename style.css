@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montez&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -24,6 +25,17 @@ footer {
   padding: 20px;
 }
 
+main {
+  grid-area: content;
+  background-color: #cdd0c0;
+}
+
+li {
+  list-style: none;
+}
+
+/* HEADER */
+
 header {
   display: flex;
   align-items: center;
@@ -35,21 +47,6 @@ header {
 header img {
   padding-left: 60px;
   padding-right: 60px;
-}
-
-aside {
-  grid-area: aside;
-  background-color: #c3d4a5;
-}
-
-main {
-  grid-area: content;
-  background-color: #cdd0c0;
-}
-
-footer {
-  grid-area: footer;
-  background-color: #86945e;
 }
 
 .headerlink {
@@ -76,37 +73,114 @@ footer {
   color: #333;
 }
 
-aside {
+/* FOOTER */
+
+footer {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 116px);
-  padding: 10px;
-  flex: 1 1 30%;
+  justify-content: center;
+  grid-area: footer;
+  background-color: #86945e;
+  text-align: center;
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-aside ul {
-  rotate: 270deg;
-  float: left;
-  list-style: none;
+footer h2 {
+  font-weight: 400;
+  font-size: xx-large;
 }
 
-.navbar {
-  font-size: 4vh;
+footer li {
+  font-size: x-large;
 }
 
-.navbar a {
+footer p {
+  font-size: x-large;
+}
+
+footer button {
+  font-size: large;
+}
+
+.navigation {
+  width: 30%;
+  color: white;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  transition: 0.1s;
+}
+
+.navigation a:hover {
+  color: #333;
+  transition: 0.1s;
+}
+
+.merci {
+  width: 40%;
+  color: white;
+}
+
+.contact {
   color: black;
-  transition: 0.3s;
+  height: 70%;
+  background-color: #c3d4a5;
+  padding: 8%;
+  margin-bottom: 2%;
 }
 
-.navbar a:hover {
-  transition: 0.3s;
-  color: rgb(57, 57, 207);
+.contact button {
+  border: 2px solid black;
+  background-color: #c3d4a5;
+  margin-top: 10px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
-.navbar a:active {
-  transition: 0.3s;
-  color: rgb(173, 11, 223);
+.coordonnees {
+  color: white;
+  width: 30%;
+}
+
+/* ASIDE */
+
+aside {
+  grid-area: aside;
+  background-color: #c3d4a5;
+  /* min-height: calc(100vh - 116px); */
+  /* padding: 10px; */
+}
+
+.flexbox-container {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 75%;
+  max-width: 100vh;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flexbox-container .item1, .item2, .item3, .item4 {
+  rotate: 270deg;
+  font-size: xx-large;
+  font-family: "Hind Madurai", sans-serif;
+}
+
+.flexbox-container a {  
+  text-decoration: none;
+  color: black;
+  transition: 0.1s;
+}
+
+.flexbox-container a:hover {
+  /* text-decoration: underline; */
+  font-weight: bold;
+  transition: 0.1s;
 }
