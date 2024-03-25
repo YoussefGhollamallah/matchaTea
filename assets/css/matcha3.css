@@ -141,15 +141,3 @@ footer {
     flex-wrap: wrap;
     margin-bottom: 10px;
 }
-
-
-/*  MEDIA MOBILE */
-@media screen and (max-width: 560px) {
-    /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
-    .produits{
-        width: 250px;
-        height: 110px;
-        text-align: justify;
-        border: 1px solid black;
-    }
-}
